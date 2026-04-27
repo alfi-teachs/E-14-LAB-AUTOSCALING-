@@ -38,35 +38,56 @@ touch file{1..100}
 yum update -y
 
 # Install Apache
+
 yum install httpd -y
 
 # Start and enable service
+
 systemctl start httpd
+
 systemctl enable httpd
+
 systemctl status httpd
 
-Step 4: (Optional) Change Instance Type
+# Step 4: (Optional) Change Instance Type
+
 Stop instance → Actions → Instance Settings → Change Instance Type
+
 Example: t2.micro → t3.micro
-Step 5: Create AMI (Amazon Machine Image)
+
+# Step 5: Create AMI (Amazon Machine Image)
+
 Go to EC2 → Instances
+
 Select your instance
+
 Click Actions → Image and Templates → Create Image
+
 Give name → Click Create
-Step 6: Check AMI Status
+
+# Step 6: Check AMI Status
+
 Go to EC2 → AMIs
+
 Wait until status shows Available
-Step 7: Launch Instance from AMI
+
+# Step 7: Launch Instance from AMI
+
 Select your AMI → Click Launch Instance
+
 Choose instance type (you can change here if needed)
+
 Launch instance
-Step 8: Connect to New Instance
+
+# Step 8: Connect to New Instance
+
 ssh -i your-key.pem ec2-user@<new-public-ip>
 
-Step 9: Verify Data
-sudo su
-ls /data
+# Step 9: Verify Data
 
+sudo su
+
+ls /data
 
 You should see:
 
@@ -78,7 +99,7 @@ http://<public-ip>
 
 Apache should be running.
 
-Step 10: Vertical Scaling (Resize Instance)
+# Step 10: Vertical Scaling (Resize Instance)
 Stop instance
 Go to Actions → Instance Settings → Change Instance Type
 Select:
