@@ -1,26 +1,40 @@
 # E-14-LAB-MANUAL SCALING AUTOSCALING-
 
 AWS EC2 AMI & Instance Scaling Lab
-Step 1: Launch EC2 Instance
+# Step 1: Launch EC2 Instance
+
 Go to Amazon Web Services Console → EC2
+
 Click Launch Instance
+
 Choose:
+
 AMI: Amazon Linux
+
 Instance Type: t2.micro
+
 Create or select a Key Pair
+
 Launch the instance
-Step 2: Connect to Instance
+
+# Step 2: Connect to Instance
+
 ssh -i your-key.pem ec2-user@<public-ip>
 
-Step 3: Install Apache & Create Files
+# Step 3: Install Apache & Create Files
+
 sudo su
 
 # Create directory and files
+
 mkdir /data
+
 cd /data
+
 touch file{1..100}
 
 # Update system
+
 yum update -y
 
 # Install Apache
