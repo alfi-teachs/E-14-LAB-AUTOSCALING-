@@ -1,6 +1,7 @@
 # E-14-LAB-MANUAL SCALING AUTOSCALING-
 
 AWS EC2 AMI & Instance Scaling Lab
+
 # Step 1: Launch EC2 Instance
 
 Go to Amazon Web Services Console → EC2
@@ -121,55 +122,4 @@ How to launch identical servers from AMI
 
 How vertical scaling works by changing instance type
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+stress --cpu 8 --timeout 1500
