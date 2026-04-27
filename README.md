@@ -100,15 +100,25 @@ http://<public-ip>
 Apache should be running.
 
 # Step 10: Vertical Scaling (Resize Instance)
+
 Stop instance
+
 Go to Actions → Instance Settings → Change Instance Type
+
 Select:
+
 t3.micro (or any required type)
+
 Start instance again
-What this lab really shows
+
+# What this lab really shows
+
 How to install and configure a web server
+
 How AMI captures full instance state (data + software)
+
 How to launch identical servers from AMI
+
 How vertical scaling works by changing instance type
 
 
